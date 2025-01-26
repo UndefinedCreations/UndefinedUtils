@@ -1,0 +1,4 @@
+name: UndefinedUtils
+version: '1.0-SNAPSHOT'
+main: com.undefined.api.TestPlugin
+api-version: '1.21'
