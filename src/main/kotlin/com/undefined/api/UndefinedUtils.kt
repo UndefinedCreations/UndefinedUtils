@@ -1,15 +1,16 @@
 package com.undefined.api
 
 import org.bukkit.plugin.java.JavaPlugin
+import java.util.logging.Logger
 
-class UndefinedUtils(javaPlugin: JavaPlugin) {
+object UndefinedUtils {
 
-    init {
-        plugin = javaPlugin
-    }
+    lateinit var plugin: JavaPlugin
+    lateinit var logger: Logger
 
-    companion object {
-        lateinit var plugin: JavaPlugin
+    fun initialize(plugin: JavaPlugin, logger: Logger = this.plugin.logger) {
+        this.plugin = plugin
+        this.logger = logger
     }
 
 }

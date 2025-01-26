@@ -7,7 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin
 class TestPlugin : JavaPlugin() {
 
     override fun onEnable() {
-        UndefinedUtils(this)
+        UndefinedUtils.initialize(this)
         event<PlayerJoinEvent> {
             player.showDemoScreen()
         }
