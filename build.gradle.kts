@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.undefined"
-version = "0.0.2"
+version = "0.0.4"
 
 publishing {
     repositories {
@@ -40,6 +40,8 @@ repositories {
 dependencies {
     compileOnly("org.spigotmc:spigot-api:1.21.3-R0.1-SNAPSHOT")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("net.kyori:adventure-text-minimessage:4.17.0")
+    implementation("net.kyori:adventure-text-serializer-legacy:4.18.0")
 }
 
 kotlin {
